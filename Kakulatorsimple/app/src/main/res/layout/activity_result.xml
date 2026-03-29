@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#1A1A2E">
+
+    <!-- ===== JUDUL HASIL ===== -->
+    <TextView
+        android:id="@+id/tvJudulHasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📋 Proses Perhitungan"
+        android:textSize="24sp"
+        android:textColor="#E94560"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- ===== CARD HASIL ===== -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:cardBackgroundColor="#16213E"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        android:layout_marginBottom="16dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tvHasilDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Menghitung..."
+                android:textColor="#AAAACC"
+                android:textSize="18sp"
+                android:lineSpacingExtra="8dp"
+                android:fontFamily="monospace" />
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <!-- ===== TOMBOL KEMBALI ===== -->
+    <Button
+        android:id="@+id/btnKembali"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="⬅️ KEMBALI"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:backgroundTint="#E94560" />
+
+</LinearLayout>
