@@ -87,7 +87,7 @@ fun main() {
     val scanner = Scanner(System.`in`)
     val kalkulator = Kalkulator()
 
-    println("=== Kalkulator Terminal ===")
+    println("Kalkulator")
     println("Ketik rumus (misal: 64 * 5 + 3 + 2 / 2)")
     println("Ketik 'exit' untuk menutup aplikasi.\n")
 
